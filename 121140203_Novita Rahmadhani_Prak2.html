@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="head">
+            <img src="Image.jpeg" 
+            alt="gambar" 
+            class="gambar">
+            
+            <div class="side">
+                <h1>Novita Rahmadhani</h1>
+                <h3>Mahasiswa Informatika</h3>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <li class="menu"><a href="https://www.linkedin.com/feed/">portofolio</a></li>
+            <li class="menu"><a href="https://kuliah.itera.ac.id/">kampus</a></li>
+            <li class="menu"><a href="https://github.com/">github</a></li>
+        </nav>
+
+        <section class="tentang" align="center">
+            <h2>About Me</h2>
+            <p>
+                Saya adalah seorang mahasiswa semester 5 teknik informatika Institut Teknologi Sumatera yang sedang mengejar gelar sarjana. Waktu berlalu begitu cepat, dan saya merasa telah mencapai titik tengah dalam perjalanan pendidikan saya. Saya sangat bersemangat menghadapi tantangan yang lebih besar yang akan datang di semester-semester berikutnya.
+            </p>
+            <div>
+                <video src="Video.mp4" controls></video>
+            </div>
+
+        </section>
+
+        <section class="pengalaman">
+            <h2 align="center">Pengalaman</h2>
+            <table class="table" border="1" align="center">
+            <thead>
+                <tr class="judul">
+                    <th rowspan="2">No</th>
+                    <th rowspan="2">Nama Kegiatan</th>
+                    <th rowspan="2">Posisi</th>
+                    <th colspan="2">Waktu</th>
+                </tr>
+                <tr class="judul">
+                    <th>mulai</th>
+                    <th>selesai</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td class="isi">1</td>
+                        <td>LDOP Arithmatic 5.0</td>
+                        <td>Staff Mentor</td>
+                        <td>Juni 2022</td>
+                        <td>Sekarang</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kabinet Nawasena HMIF ITERA</td>
+                        <td>Staff Divisi Pengabdian Masyarakat</td>
+                        <td>Maret 2023</td>
+                        <td>Sekarang</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>First Gathering Informatika 22</td>
+                        <td>Staff Divisi Kreatif</td>
+                        <td>Sepetember 2022</td>
+                        <td>September 2022</td>
+                    </tr>
+            </tbody>
+            <tfoot>
+    
+            </tfoot>
+        </table>
+    </section>
+
+    <section class="form">
+        <form action="jawaban.php" method="post">
+            <h2>Hubungi saya</h2>
+            <label for="email">Email</label>
+            <input type="text" placeholder="masukkan teks" id="email">
+            
+            <p>Apakah kamu suka makan bakso?</p>
+            <input type="radio" name="soal b"> Iya<br>
+            <input type="radio" name="soal b"> Tidak<br>
+            
+            <h2>Apa yang sedang kamu lakukan? </h2>
+            <input type="checkbox" name="b" value="Menonton"> Menonton <br>
+            <input type="checkbox" name="a" value="Membaca"> Membaca <br>
+            <input type="checkbox" name="a" value="Menggambar"> Menggambar <br>
+            <input type="checkbox" name="a" value="bernapas"><input type="text" placeholder="masukkan teks"> <br>
+            <br>
+            <button class="btn" type="submit">Kirim</button>
+        </form>
+    </section>
+    
+    </div>        
+</body>
+</html>
