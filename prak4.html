@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hitung Jumlah Bilangan Ganjil dan Genap</title>
+</head>
+<body>
+    <h1>Menghitung Bilangan Ganjil dan Genap</h1>
+    <form id="inputForm">
+        <label for="inputNumber">Masukkan bilangan bulat positif:</label><br>
+        <br><input type="number" id="inputNumber" min="1" step="1">
+        <button type="button" onclick="hitung()">Hitung</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function hitung() {
+            var inputNumber = document.getElementById('inputNumber').value;
+            var totalGanjil = 0;
+            var totalGenap = 0;
+
+            if (inputNumber >= 1) {
+                for (var i = 1; i <= inputNumber; i++) {
+                    if (i % 2 === 0) {
+                        totalGenap++;
+                    } else {
+                        totalGanjil++;
+                    }
+                }
+
+                var result = "Hasil 1 sampai " + inputNumber + "<br>";
+                result += "Jumlah bilangan ganjil: " + totalGanjil + "<br>";
+                result += "Jumlah bilangan genap: " + totalGenap;
+
+                document.getElementById('result').innerHTML = result;
+            } else {
+                document.getElementById('result').innerHTML = "Masukkan bilangan bulat positif yang valid.";
+            }
+        }
+    </script>
+</body>
+</html>
